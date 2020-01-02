@@ -1,0 +1,24 @@
+.recipeDetail {
+  padding-bottom: 100px;
+  &__header {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      background-color: #ccc;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

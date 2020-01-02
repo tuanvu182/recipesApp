@@ -1,0 +1,53 @@
+.header {
+  background-color: rgb(229, 221, 170);
+  height: 120px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+  }
+
+  &__logo {
+    img {
+      max-height: 100px;
+    }
+  }
+
+  &__navbar {
+    ul {
+      display: flex;
+    }
+
+    button {
+      font-size: 1.8rem;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      color: #fff;
+      background-color: rgb(52, 224, 52);
+      box-shadow: 0 2px 0 rgb(44, 163, 23);
+      outline: none;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 0 rgb(44, 163, 23);
+      }
+
+      &:active {
+        transform: translateY(1px);
+        box-shadow: 0 1px 0 rgb(44, 163, 23);
+      }
+    }
+    li:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+}

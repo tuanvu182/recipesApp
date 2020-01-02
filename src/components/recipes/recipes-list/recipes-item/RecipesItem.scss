@@ -1,0 +1,39 @@
+.recipesItem {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  width: 48%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  box-shadow: 0 0 2px #ccc;
+
+  &:hover {
+    box-shadow: 0 0 4px #ccc;
+  }
+
+  &__img {
+    overflow: hidden;
+    max-height: 60px;
+    min-width: 120px;
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &__info {
+    padding-left: 40px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    font-size: 1.4rem;
+  }
+}
