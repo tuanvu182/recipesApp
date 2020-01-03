@@ -3,16 +3,12 @@ import "./RecipesList.scss";
 
 import RecipesItem from "./recipes-item/RecipesItem";
 
-const RecipesList = () => {
+const RecipesList = props => {
   return (
     <div className="recipesList">
-      <RecipesItem />
-      <RecipesItem />
-      <RecipesItem />
-      <RecipesItem />
-      <RecipesItem />
-      <RecipesItem />
-      <RecipesItem />
+      {props.lists.map(list => {
+        return <RecipesItem list={list} />;
+      })}
     </div>
   );
 };

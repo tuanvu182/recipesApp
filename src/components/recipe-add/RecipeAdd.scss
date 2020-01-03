@@ -35,6 +35,16 @@
     padding: 0 15px;
   }
 
+  &__desc {
+    padding: 10px 15px;
+    height: 150px;
+    width: 80%;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
   &__btngroup {
     display: flex;
     justify-content: center;
@@ -42,6 +52,8 @@
   }
 
   &__btn {
+    padding-top: 6px;
+    text-align: center;
     min-width: 100px;
     height: 40px;
     margin: 0 20px;

@@ -5,8 +5,7 @@ const RecipeAddImg = () => {
   const [ingredients, setIngredients] = useState([]);
   const [name, setName] = useState("");
   const [add, setAdd] = useState("");
-  const onAdd = e => {
-    e.preventDefault();
+  const onAdd = () => {
     if (name !== "" && add !== "") {
       setIngredients([...ingredients, { name, add }]);
       setName("");
@@ -55,7 +54,11 @@ const RecipeAddImg = () => {
         ></input>
       </div>
       <div>
-        <button className="recipeAddIngre__btn" onClick={e => onAdd(e)}>
+        <button
+          type="button"
+          className="recipeAddIngre__btn"
+          onClick={() => onAdd()}
+        >
           Thêm
         </button>
       </div>

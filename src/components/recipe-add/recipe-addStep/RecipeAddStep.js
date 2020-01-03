@@ -5,8 +5,7 @@ const RecipeAddStep = () => {
   const [methods, setMethods] = useState([]);
   const [context, setContext] = useState("");
 
-  const onAdd = e => {
-    e.preventDefault();
+  const onAdd = () => {
     if (context !== "") {
       setMethods([...methods, context]);
       setContext("");
@@ -47,7 +46,11 @@ const RecipeAddStep = () => {
         className="recipeAddStep__context"
         name="recipeName"
       ></textarea>
-      <button className="recipeAddStep__btn" onClick={e => onAdd(e)}>
+      <button
+        type="button"
+        className="recipeAddStep__btn"
+        onClick={() => onAdd()}
+      >
         Thêm
       </button>
       <ul className="recipeAddStep__contain">

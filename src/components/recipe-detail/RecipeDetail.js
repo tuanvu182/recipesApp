@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./RecipeDetail.scss";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-const RecipeDetail = () => {
+const RecipeDetail = props => {
+  useEffect(() => {
+    console.log("get ID");
+    console.log(props.match.params.id);
+  }, []);
   return (
     <section className="recipeDetail">
       <h2 className="recipeDetail__header">Bún Chả</h2>
@@ -89,4 +93,4 @@ const RecipeDetail = () => {
   );
 };
 
-export default RecipeDetail;
+export default withRouter(RecipeDetail);
