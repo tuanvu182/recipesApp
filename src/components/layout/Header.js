@@ -16,6 +16,9 @@ const Header = () => {
         <nav className="header__navbar">
           <ul>
             <li>
+              <button>Thêm món</button>
+            </li>
+            <li>
               <button>Random</button>
             </li>
             <li>

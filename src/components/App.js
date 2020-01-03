@@ -5,14 +5,16 @@ import Footer from "./layout/Footer";
 
 import Recipes from "./recipes/Recipes";
 import RecipeDetail from "./recipe-detail/RecipeDetail";
+import RecipeAdd from "./recipe-add/RecipeAdd";
 
 const App = () => {
   return (
     <React.Fragment>
       <Header />
       <main>
-        <Recipes />
-        <RecipeDetail />
+        {/* <Recipes />
+        <RecipeDetail /> */}
+        <RecipeAdd />
       </main>
       <Footer />
     </React.Fragment>

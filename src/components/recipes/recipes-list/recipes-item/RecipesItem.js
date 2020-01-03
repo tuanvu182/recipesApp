@@ -5,7 +5,10 @@ const RecipesItem = () => {
   return (
     <div className="recipesItem">
       <p className="recipesItem__img">
-        <img src="https://vnn-imgs-f.vgcloud.vn/2019/05/23/14/cach-lam-bun-cha-don-gian-tai-nha.jpg"></img>
+        <img
+          src="https://vnn-imgs-f.vgcloud.vn/2019/05/23/14/cach-lam-bun-cha-don-gian-tai-nha.jpg"
+          alt="main"
+        ></img>
       </p>
       <div className="recipesItem__info">
         <p className="recipesItem__title">Bun Cha</p>

@@ -1,7 +1,8 @@
 .recipeDetail {
   padding-bottom: 100px;
   &__header {
-    font-size: 3rem;
+    margin-bottom: 30px;
+    font-size: 4rem;
     text-align: center;
   }
 
@@ -20,5 +21,71 @@
       bottom: 0;
       left: 0;
     }
+  }
+
+  &__body {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sub {
+    flex: 2;
+    padding-right: 50px;
+  }
+
+  &__main {
+    flex: 3;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+    img {
+      min-width: 400px;
+      height: auto;
+    }
+  }
+
+  &__contain {
+    padding: 0 0 0 10px;
+    counter-reset: ingredient;
+  }
+
+  &__item {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    &::before {
+      counter-increment: ingredient;
+      content: counter(ingredient) ". ";
+    }
+  }
+
+  &__method {
+    counter-reset: step;
+  }
+
+  &__step {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    &::before {
+      font-weight: bold;
+      counter-increment: step;
+      content: "Bước " counter(step) " : ";
+    }
+  }
+
+  &__edit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
+  &__control {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
   }
 }

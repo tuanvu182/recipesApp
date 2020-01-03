@@ -1,0 +1,87 @@
+.recipeAddIngre {
+  &__inputgroup {
+    display: flex;
+    padding-right: 40px;
+    justify-content: space-between;
+  }
+
+  &__input {
+    font-size: 1.8rem;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 15px;
+  }
+
+  &__ingredient {
+    width: 60%;
+  }
+
+  &__quantity {
+    width: 100px;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    &:hover {
+      background-color: #fff;
+      color: greenyellow;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 80%;
+    margin: 5px 0 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: red;
+    }
+  }
+
+  &__remove {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: red;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 8px;
+      width: 1px;
+      background-color: #fff;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
