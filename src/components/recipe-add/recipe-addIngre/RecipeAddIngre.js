@@ -7,12 +7,11 @@ const RecipeAddImg = () => {
   const [add, setAdd] = useState("");
   const onAdd = e => {
     e.preventDefault();
-    console.log(name, add);
     if (name !== "" && add !== "") {
       setIngredients([...ingredients, { name, add }]);
+      setName("");
+      setAdd("");
     }
-    setName("");
-    setAdd("");
   };
 
   const onDelete = e => {
@@ -26,7 +25,7 @@ const RecipeAddImg = () => {
   const Ingredient = (name, add, key) => {
     return (
       <li className="recipeAddIngre__item" key={key}>
-        <p data-key={key}>
+        <p className="recipeAddIngre__info" data-key={key}>
           {name} {add ? <span>({add})</span> : null}
         </p>
         <span
@@ -56,7 +55,7 @@ const RecipeAddImg = () => {
         ></input>
       </div>
       <div>
-        <button class="recipeAddIngre__btn" onClick={e => onAdd(e)}>
+        <button className="recipeAddIngre__btn" onClick={e => onAdd(e)}>
           Thêm
         </button>
       </div>

@@ -37,6 +37,7 @@
   }
 
   &__item {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +57,13 @@
     }
   }
 
+  &__info {
+    word-break: break-all;
+    white-space: normal;
+  }
+
   &__remove {
+    flex: 0 0 auto;
     width: 16px;
     height: 16px;
     border-radius: 50%;

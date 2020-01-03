@@ -34,4 +34,39 @@
     border-radius: 5px;
     padding: 0 15px;
   }
+
+  &__btngroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    min-width: 100px;
+    height: 40px;
+    margin: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+    }
+    &--1 {
+      background-color: rgb(238, 238, 113);
+      border-color: rgb(238, 238, 113);
+      &:hover {
+        color: rgb(238, 238, 113);
+      }
+    }
+
+    &--2 {
+      background-color: rgb(18, 253, 144);
+      border-color: rgb(18, 253, 144);
+      &:hover {
+        color: rgb(18, 253, 144);
+      }
+    }
+  }
 }

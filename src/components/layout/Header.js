@@ -1,22 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__wrapper">
-        <a className="header__logo" href="/">
+        <Link to="/" className="header__logo">
           <img
             style={{ height: "100%", display: "inline-block" }}
             src="https://via.placeholder.com/200x100"
             alt="logo"
           ></img>
-        </a>
+        </Link>
 
         <nav className="header__navbar">
           <ul>
             <li>
-              <button>Thêm món</button>
+              <Link className="header__add" to="/recipeAdd/">
+                Thêm món
+              </Link>
             </li>
             <li>
               <button>Random</button>

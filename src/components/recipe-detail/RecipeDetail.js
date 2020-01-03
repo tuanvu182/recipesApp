@@ -1,5 +1,6 @@
 import React from "react";
 import "./RecipeDetail.scss";
+import { Link } from "react-router-dom";
 
 const RecipeDetail = () => {
   return (
@@ -7,7 +8,7 @@ const RecipeDetail = () => {
       <h2 className="recipeDetail__header">Bún Chả</h2>
       <hr />
       <span className="recipeDetail__control">
-        <button>Trở về</button>
+        <Link to="/">Trở về</Link>
         <button>Xóa</button>
       </span>
       <div className="recipeDetail__body">
@@ -20,7 +21,9 @@ const RecipeDetail = () => {
             ></img>
           </p>
           <h3 className="recipeDetail__title">Nguyên liệu</h3>
-          <span className="recipeDetail__edit">Chỉnh sửa</span>
+          <Link to="/recipeAdd/" className="recipeDetail__edit">
+            Chỉnh sửa
+          </Link>
           <ul className="recipeDetail__contain">
             <li className="recipeDetail__item">
               thịt ba chỉ (<span>500 gram</span>)
@@ -41,7 +44,9 @@ const RecipeDetail = () => {
         </div>
         <div className="recipeDetail__main">
           <h3 className="recipeDetail__title">Cách làm</h3>
-          <span className="recipeDetail__edit">Chỉnh sửa</span>
+          <Link to="/recipeAdd/" className="recipeDetail__edit">
+            Chỉnh sửa
+          </Link>
           <ul className="recipeDetail__method">
             <li className="recipeDetail__step">
               Thịt ba chỉ thái thành những miếng vừa ăn. Thịt nạc vai đem thái

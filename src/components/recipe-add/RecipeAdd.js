@@ -21,9 +21,11 @@ const RecipeAdd = () => {
         </div>
         <div className="recipeAdd__right">
           <RecipeAddStep />
-          <div>
-            <button>Hủy</button>
-            <button type="submit">Đồng ý</button>
+          <div className="recipeAdd__btngroup">
+            <button className="recipeAdd__btn recipeAdd__btn--1">Hủy</button>
+            <button className="recipeAdd__btn recipeAdd__btn--2" type="submit">
+              Đồng ý
+            </button>
           </div>
         </div>
       </form>
