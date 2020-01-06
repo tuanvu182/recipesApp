@@ -17,7 +17,7 @@ const Header = () => {
         <nav className="header__navbar">
           <ul>
             <li>
-              <Link className="header__add" to="/recipeAdd/">
+              <Link className="header__add" to="/recipe/add">
                 Thêm món
               </Link>
             </li>

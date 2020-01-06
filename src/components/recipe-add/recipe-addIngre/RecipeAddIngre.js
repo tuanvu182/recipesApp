@@ -6,7 +6,7 @@ const RecipeAddImg = () => {
   const [name, setName] = useState("");
   const [add, setAdd] = useState("");
   const onAdd = () => {
-    if (name !== "" && add !== "") {
+    if (name !== "") {
       setIngredients([...ingredients, { name, add }]);
       setName("");
       setAdd("");

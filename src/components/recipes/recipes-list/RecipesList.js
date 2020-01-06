@@ -6,8 +6,8 @@ import RecipesItem from "./recipes-item/RecipesItem";
 const RecipesList = props => {
   return (
     <div className="recipesList">
-      {props.lists.map(list => {
-        return <RecipesItem list={list} />;
+      {props.lists.map((list, index) => {
+        return <RecipesItem key={index} list={list} />;
       })}
     </div>
   );

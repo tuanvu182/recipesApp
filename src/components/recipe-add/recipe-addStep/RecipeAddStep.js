@@ -15,10 +15,8 @@ const RecipeAddStep = () => {
   const onDelete = e => {
     let index = e.target.previousSibling.dataset.key;
     let newMethods = [...methods];
-    console.log(newMethods);
     newMethods.splice(index, 1);
     setMethods(newMethods);
-    console.log(newMethods);
   };
 
   const Step = (context, key) => {

@@ -25,6 +25,7 @@ const RecipeAddImg = () => {
           ref={inputEle1}
           onChange={() => getFileName1()}
           type="file"
+          accept="image/*"
           name="image1"
         ></input>
       </label>
@@ -38,6 +39,7 @@ const RecipeAddImg = () => {
           ref={inputEle2}
           onChange={() => getFileName2()}
           type="file"
+          accept="image/*"
           name="image2"
         ></input>
       </label>
